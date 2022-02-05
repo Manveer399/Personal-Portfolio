@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  min-width: 100vw;
+  z-index: 1000000;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-left: 30px;
+  color: aliceblue;
+  padding: 0.75rem;
+}
+
+.navbar-links-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  margin-right: 50px;
+}
+
+.nav-lis-items {
+  list-style: none;
+}
+
+.nav-lis-items > a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.main {
+  height: 100vh;
+  background-color: black;
+}
+.home-sec {
+  position: relative;
+  height: 100vh;
+}
+
+.home-sec img {
+  position: absolute;
+  right: 150px;
+  top: 5px;
+  bottom: 0px;
+  height: 650px;
+}
