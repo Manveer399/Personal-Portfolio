@@ -62,7 +62,7 @@
 /*home section */
 
 .home-section {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
   /*
@@ -82,7 +82,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-height: 100vh;
+  height: 100%;
 }
 
 .home-section .text-wrapper {
