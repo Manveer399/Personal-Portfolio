@@ -1,62 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@400;500;600&family=Inter:wght@400;600;700&family=Lato&display=swap');
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Heebo', sans-serif;
 }
 
+/*Navbvar*/
 .header {
   position: fixed;
-  top: 0;
   min-width: 100vw;
   z-index: 1000000;
+  padding: 0.8rem 0;
 }
+
 .navbar-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0 80px;
 }
 
 .page-title {
-  font-size: 1.6rem;
+  font-size: 2rem;
   cursor: pointer;
-  margin-left: 30px;
   color: aliceblue;
-  padding: 0.75rem;
+}
+
+.page-title span {
+  color: #0ad3ee;
 }
 
 .navbar-links-container {
   display: flex;
   width: 50%;
   justify-content: space-evenly;
-  margin-right: 50px;
 }
 
-.nav-lis-items {
+.nav-list-items {
   list-style: none;
 }
 
-.nav-lis-items > a {
+.nav-list-items a {
+  font-size: 1.1rem;
   text-decoration: none;
   color: white;
-  padding: 1rem;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.5s ease;
 }
 
-.main {
-  height: 100vh;
-  background-color: black;
+.nav-list-items a:hover {
+  color: #0ad3ee;
 }
-.home-sec {
+
+/*home section */
+
+.home-section {
+  height: 100vh;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  /*
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);*/
+  /* background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);*/
+  display: flex;
+  color: white;
+  min-width: 100vw;
+}
+
+.home-content-container {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.home-section .text-wrapper {
+  padding-left: 80px;
+}
+.home-section .home-content-container .text-1 {
+  font-size: 27px;
+}
+
+.home-section .home-content-container .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -2px;
+  margin-top: -15px;
+}
+
+.home-section .home-content-container .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+  margin-top: -20px;
+  font-weight: 500;
+}
+
+.text-3 span {
+  color: #0ad3ee;
+}
+
+.hire-me-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0ad3ee;
+  color: whitesmoke;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.hire-me-button:hover {
+  background-color: whitesmoke;
+  color: #0b9fb3;
+  letter-spacing: 0.2rem;
+}
+
+img {
+  margin-right: 30px;
   position: relative;
-  height: 100vh;
-}
-
-.home-sec img {
-  position: absolute;
-  right: 150px;
-  top: 5px;
-  bottom: 0px;
-  height: 650px;
+  top: -27px;
 }
