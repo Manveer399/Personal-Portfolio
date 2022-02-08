@@ -22,8 +22,14 @@ homeSectionObserver.observe(homeSection)
 
 const menuButton = document.querySelector('#menu-bar')
 const menu = document.querySelector('.menu')
-const span = document.querySelector('.material-icons')
+const closeButton = document.querySelector('#close-btn')
 
 menuButton.addEventListener('click', () => {
   menu.classList.toggle('active')
+  closeButton.classList.toggle('active')
+})
+
+closeButton.addEventListener('click', () => {
+  menu.classList.toggle('active')
+  closeButton.classList.toggle('active')
 })

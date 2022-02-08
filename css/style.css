@@ -13,7 +13,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/*Navbar*/
+/*-------------------------Navbar------------------------------*/
 .header {
   position: fixed;
   width: 100vw;
@@ -30,6 +30,7 @@ body {
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
   padding: 7px;
 }
+
 .navbar-container {
   width: 100%;
   display: flex;
@@ -37,15 +38,6 @@ body {
   align-items: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 0 80px;
-}
-
-#menu-bar {
-  color: #0ad3ee;
-  font-size: 40px;
-  position: absolute;
-  top: 13px;
-  right: 25px;
-  display: none;
 }
 
 .page-title {
@@ -62,6 +54,7 @@ body {
   height: 100%;
   width: 50%;
 }
+
 .navbar-links-container {
   display: flex;
   justify-content: space-evenly;
@@ -84,8 +77,78 @@ body {
   color: #0ad3ee;
 }
 
-/*home section */
+#menu-bar {
+  color: #0ad3ee;
+  font-size: 40px;
+  position: absolute;
+  top: 13px;
+  right: 25px;
+  display: none;
+}
 
+#close-btn {
+  color: #0ad3ee;
+  font-size: 40px;
+  position: absolute;
+  display: none;
+  top: 13px;
+  right: 10px;
+}
+
+/*------------------------responsive media for nav bar------------------*/
+@media all and (max-width: 705px) {
+  .navbar-container {
+    padding: 0;
+  }
+
+  .page-title {
+    align-self: flex-start;
+    padding-left: 50px;
+  }
+
+  #menu-bar {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #close-btn.active {
+    display: flex;
+    cursor: pointer;
+  }
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+  }
+
+  .navbar-links-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .navbar-links-container .nav-list-items a {
+    display: block;
+    margin: 20px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  .menu.active {
+    display: flex;
+  }
+}
+
+/*---------------------home-section----------------------*/
 .home-section {
   height: 100vh;
   background-color: #000000;
@@ -103,11 +166,13 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  flex-shrink: 0;
 }
 
 .home-section .text-wrapper {
+  display: flex;
   padding-left: 80px;
+  flex-direction: column;
+  position: relative;
 }
 .home-section .home-content-container .text-1 {
   font-size: 27px;
@@ -116,8 +181,8 @@ body {
 .home-section .home-content-container .text-2 {
   font-size: 75px;
   font-weight: 600;
-  margin-left: -2px;
   white-space: nowrap;
+  margin-left: -2px;
   margin-top: -15px;
 }
 
@@ -125,6 +190,7 @@ body {
   font-size: 40px;
   margin: 5px 0;
   margin-top: -20px;
+  white-space: nowrap;
   font-weight: 500;
 }
 
@@ -142,6 +208,8 @@ body {
   border-radius: 5px;
   font-weight: 600;
   transition: 0.5s ease;
+  position: absolute;
+  bottom: -55px;
 }
 
 .hire-me-button:hover {
@@ -161,97 +229,69 @@ img {
   }
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 720px) {
   img {
     display: none;
   }
-}
-
-/*responsive media for nav bar*/
-
-@media all and (max-width: 980px) {
-  .navbar-container {
-    padding: 0;
+  .home-content-container .text-wrapper {
+    padding-left: 70px;
   }
-
-  .page-title {
-    align-self: flex-start;
-    padding-left: 50px;
-  }
-
-  #menu-bar {
-    display: flex;
-    cursor: pointer;
-    z-index: 1000000;
-  }
-  .navbar-container {
-    flex-direction: column;
-  }
-
-  .menu {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  .navbar-links-container {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 30px;
-    transition: all 0.5s ease;
-  }
-
-  .navbar-links-container .nav-list-items a {
-    display: block;
-    margin: 20px 0;
-    font-size: 20px;
-    text-align: center;
-  }
-  .menu.active {
-    display: flex;
-  }
-}
-
-@media all and (max-width: 700px) {
-  .home-section .text-wrapper {
-    padding-left: 30px;
+  .home-content-container {
+    padding-left: 0;
   }
   .home-section .home-content-container .text-1 {
     font-size: 27px;
   }
 
   .home-section .home-content-container .text-2 {
-    font-size: 40px;
-    font-weight: 600;
-    margin-left: -2px;
+    font-size: 73px;
     white-space: nowrap;
-    margin-top: 2px;
   }
 
   .home-section .home-content-container .text-3 {
     font-size: 30px;
-    font-weight: 500;
-    margin-top: 2px;
+  }
+}
+
+@media all and (max-width: 693px) {
+  .home-content-container .text-wrapper {
+    padding-left: 50px;
+  }
+  .home-section .home-content-container .text-1 {
+    font-size: 27px;
   }
 
-  .text-3 span {
-    color: #0ad3ee;
+  .home-section .home-content-container .text-2 {
+    font-size: 70px;
+    white-space: nowrap;
   }
 
+  .home-section .home-content-container .text-3 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 647px) {
+  .home-content-container .text-wrapper {
+    padding-left: 50px;
+  }
+  .home-section .home-content-container .text-1 {
+    font-size: 27px;
+  }
+
+  .home-section .home-content-container .text-2 {
+    font-size: 65px;
+    white-space: normal;
+  }
+  .home-section .home-content-container .text-3 {
+    font-size: 25px;
+    white-space: normal;
+  }
+}
+
+@media all and (max-width: 396px) {
   .hire-me-button {
-    padding: 0.8rem 1.5rem;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #0ad3ee;
-    color: whitesmoke;
-    border-style: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: 0.5s ease;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
   }
 }
