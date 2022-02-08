@@ -175,7 +175,8 @@ body {
   position: relative;
 }
 .home-section .home-content-container .text-1 {
-  font-size: 27px;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .home-section .home-content-container .text-2 {
@@ -286,12 +287,5 @@ img {
   .home-section .home-content-container .text-3 {
     font-size: 25px;
     white-space: normal;
-  }
-}
-
-@media all and (max-width: 396px) {
-  .hire-me-button {
-    padding: 0.5rem 1rem;
-    font-size: 15px;
   }
 }
