@@ -213,6 +213,12 @@ body {
   bottom: -55px;
 }
 
+.hire-me-button span {
+  position: relative;
+  top: 5.5px;
+  left: -6px;
+}
+
 .hire-me-button:hover {
   background-color: whitesmoke;
   color: #0b9fb3;
