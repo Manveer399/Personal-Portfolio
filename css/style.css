@@ -200,7 +200,7 @@ body {
 }
 
 .hire-me-button {
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1rem;
   font-size: 20px;
   cursor: pointer;
   background-color: #0ad3ee;
@@ -293,5 +293,10 @@ img {
   .home-section .home-content-container .text-3 {
     font-size: 25px;
     white-space: normal;
+  }
+
+  .hire-me-button {
+    padding: 0.8rem 0.8rem;
+    bottom: -63px;
   }
 }
