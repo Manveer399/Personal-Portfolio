@@ -494,7 +494,7 @@ img {
 .edu-timeline {
   grid-column: span 2;
   margin: 150px auto;
-  min-height: 100%;
+  min-height: 100vh;
   display: block;
   width: 80%;
 }
@@ -511,7 +511,7 @@ img {
   border-radius: 10px;
   color: white;
   display: block;
-  margin: -70px 0;
+  margin: -60px 0;
   position: relative;
   background: #f00;
 }
