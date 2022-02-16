@@ -336,6 +336,7 @@ img {
   margin-left: 25px;
   font-size: 25px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .about-section .details-container .info-wrapper .heading span {
