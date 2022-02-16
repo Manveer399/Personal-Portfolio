@@ -326,7 +326,7 @@ img {
   align-self: center;
 }
 .about-section .details-container .info-wrapper p {
-  color: #0ad3ee;
+  color: white;
   text-align: justify;
   padding: 0 25px 25px 25px;
 }
@@ -375,7 +375,7 @@ img {
   letter-spacing: 0.5px;
 }
 
-@media all and (max-width: 865px) {
+@media all and (max-width: 875px) {
   .about-section .details-container {
     flex-direction: column;
   }
