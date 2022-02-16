@@ -322,15 +322,25 @@ img {
 }
 
 .about-section .details-container .info-wrapper {
-  max-width: 50%;
+  max-width: 55%;
   align-self: center;
 }
 .about-section .details-container .info-wrapper p {
   color: #0ad3ee;
   text-align: justify;
-  padding: 25px;
+  padding: 0 25px 25px 25px;
 }
 
+.about-section .details-container .info-wrapper .heading {
+  color: white;
+  margin-left: 25px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.about-section .details-container .info-wrapper .heading span {
+  color: #0ad3ee;
+}
 .about-section .details-container .image {
   min-width: 40%;
 }
@@ -381,8 +391,21 @@ img {
     align-self: center;
   }
 
+  .about-section .details-container .info-wrapper p {
+    padding: 10px;
+  }
+
   .btn-flex-wrapper button {
     font-size: 14px;
+    padding-right: 10px;
+  }
+
+  .btn-flex-wrapper {
+    padding-left: 10px;
+  }
+
+  .about-section .details-container .info-wrapper .heading {
+    margin-left: 10px;
   }
 }
 /*skill-section*/
