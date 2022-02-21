@@ -65,3 +65,9 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+const downloadCvButton = document.querySelector('.download-cv-btn')
+
+downloadCvButton.addEventListener('click', () => {
+  window.open('./pdf/ManveerKasseran_CV.pdf', '_blank')
+})
