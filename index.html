@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+   <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -57,7 +57,7 @@
       <div class="details-container">
         <div class="image"><img src="./img/grad.jpeg" alt="graduation image" /></div>
         <div class="info-wrapper">
-          <div class="heading"> I'm Manveer and I'm a <span> Software Developer</span></div>
+          <div class="info-heading"> I'm Manveer and I'm a <span> Software Developer</span></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             sed exercitationem consequuntur est accusantium deleniti vitae
@@ -76,56 +76,53 @@
       </div>
 
       <!--skill-section-->
-<!--
       <div class="skill-section">
         <h1 class="heading">Skills</h1>
         <div class="skills-container">
           <div class="skill-card">
-            <div class="skill-card-img-level-wrapper">
-              <img src="./img/html.png" alt="" class="skill-img">
-            <div class="skill-level">98%</div>
-            </div>
-            <h1 class="skill-name">HTML</h1>
-            <p class="skill-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, eaque!</p>
+              <img src="./img/html-1.svg" alt="" class="skill-img">
+            <h1 class="skill-name">HTML<button data-modal-target="#modal" class="open">+</button></h1>
           </div>
 
           <div class="skill-card">
-            <div class="skill-card-img-level-wrapper">
-              <img src="./img/css.png" alt="" class="skill-img">
-            <div class="skill-level">98%</div>
-            </div>
-            <h1 class="skill-name">CSS</h1>
-            <p class="skill-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, eaque!</p>
+              <img src="./img/css-3.svg" alt="" class="skill-img">
+        
+             <h1 class="skill-name">CSS<button data-modal-target="#modal" class="open">+</button></h1>      
           </div>
 
           <div class="skill-card">
-            <div class="skill-card-img-level-wrapper">
-              <img src="./img/js.png" alt="" class="skill-img">
-            <div class="skill-level">98%</div>
-            </div>
-            <h1 class="skill-name">JS</h1>
-            <p class="skill-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, eaque!</p>
+              <img src="./img/javascript-1.svg" alt="" class="skill-img">
+            <h1 class="skill-name">Javascript<button data-modal-target="#modal" class="open">+</button></h1>
           </div>
 
           <div class="skill-card">
-            <div class="skill-card-img-level-wrapper">
-              <img src="./img/reactjs.png" alt="" class="skill-img">
-            <div class="skill-level">98%</div>
-            </div>
-            <h1 class="skill-name">React.js</h1>
-            <p class="skill-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, eaque!</p>
+              <img src="./img/react-2.svg" alt="" class="skill-img">
+            <h1 class="skill-name">React<button data-modal-target="#modal" class="open">+</button></h1>
           </div>
-          <div class="skill-card">
-            <div class="skill-card-img-level-wrapper">
-              <img src="./img/nodejs.png" alt="" class="skill-img">
-            <div class="skill-level">98%</div>
-            </div>
-            <h1 class="skill-name">Node.js</h1>
-            <p class="skill-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, eaque!</p>
+
+          
           </div>
         </div>
       </div>
--->
+
+
+      <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ut
+        facere voluptates rem dolores veritatis error, magni autem explicabo,
+        quibusdam perspiciatis vitae omnis ipsa maxime placeat corporis iste
+        quisquam inventore labore ipsam ex, ad excepturi vel nostrum. Atque,
+        reprehenderit soluta? Neque soluta ipsam consectetur cumque eius nulla
+        voluptatem sed nam?
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+
       <!--Education and Experience-->
       <!--
       <div class="edu-timeline">
