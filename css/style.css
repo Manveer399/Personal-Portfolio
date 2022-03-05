@@ -643,7 +643,7 @@ img {
   width: 100%;
   min-height: 100vh;
   padding: 150px 100px 100px;
-  transition: 1s;
+  transition: 0.5s;
   background-color: #000000;
 }
 
@@ -652,37 +652,42 @@ img {
   text-align: center;
   padding: 50px;
   font-size: 30px;
+  white-space: nowrap;
 }
 
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
-  width: 80%;
+  grid-gap: 50px;
   margin: 0 auto;
 }
 
 .project-card {
-  min-height: 400px;
+  height: 400px;
+  width: 70%;
+  max-height: 500px;
+  min-width: 400px;
   position: relative;
+  margin: 0 auto;
 }
 
 .project-img {
   width: 100%;
   height: 100%;
-  position: absolute;
   object-fit: cover;
-  transition: 0.5s;
+  position: absolute;
+  transition: 0.3s;
 }
 
 .project-content {
-  padding: 40px;
+  padding: 30px;
   color: white;
   transition: 0.5s;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
   opacity: 0;
 }
 
@@ -694,7 +699,7 @@ img {
 }
 
 .project-info {
-  margin: 40px;
+  margin: 25px 0 45px 0;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -716,11 +721,6 @@ img {
   cursor: pointer;
 }
 
-.project-btn.live {
-  background: none;
-  border: 2px solid #fff;
-}
-
 .project-card:hover .project-img {
   filter: blur(20px);
 }
@@ -733,8 +733,41 @@ img {
   opacity: 1;
 }
 
-@media screen and (max-width: 1121px) {
+@media screen and (max-width: 1080px) {
   .project-container {
     grid-template-columns: 1fr;
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .project-img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-section {
+    padding: 0;
+  }
+
+  .project-card {
+    height: 250px;
+    min-width: 150px;
+  }
+
+  .project-title {
+    font-size: 25px;
+  }
+
+  .project-info {
+    margin: 25px 0 45px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .project-btn {
+    height: 30px;
+    font-size: 12px;
   }
 }
